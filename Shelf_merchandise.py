@@ -36,8 +36,8 @@ rad = st.sidebar.radio('Navigation',['Shelf Space Optimization','Market Basket']
 
 if rad=='Shelf Space Optimization':
     st.header('SHELF SPACE OPTIMIZATION')
-    imp = Image.open('https://github.com/shriyaellur/assortment_planning/blob/main/Shelf_optimization.jpg','r')
-    st.image(imp,width=800)
+    #imp = Image.open('https://github.com/shriyaellur/assortment_planning/blob/main/Shelf_optimization.jpg','r')
+    #st.image(imp,width=800)
     
     file1 = st.file_uploader('Upload a file',key='f1')
 
@@ -175,7 +175,7 @@ if rad=='Shelf Space Optimization':
             
 if rad=='Market Basket':
     st.title('Market Basket Analysis')
-    st.image('https://github.com/shriyaellur/assortment_planning/blob/main/market.jpg',width=800)
+    #st.image('https://github.com/shriyaellur/assortment_planning/blob/main/market.jpg',width=800)
     f=st.file_uploader('Upload file')
 
     if f is not None:
