@@ -8,6 +8,7 @@ Created on Tue Apr 25 12:03:19 2023
 import numpy as np
 import pulp
 import sklearn
+import numpy.testing as testing
 import pandas as pd
 import mlxtend
 from sklearn.linear_model import LinearRegression
