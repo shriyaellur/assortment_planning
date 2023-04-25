@@ -30,12 +30,13 @@ from mlxtend.frequent_patterns import apriori
 from mlxtend.frequent_patterns import association_rules
 import time
 from time import sleep
+from PIL import Image
 
 rad = st.sidebar.radio('Navigation',['Shelf Space Optimization','Market Basket'])
 
 if rad=='Shelf Space Optimization':
     st.header('SHELF SPACE OPTIMIZATION')
-    imp='https://github.com/shriyaellur/assortment_planning/blob/main/Shelf_merchandise.py'
+    imp = Image.open('https://github.com/shriyaellur/assortment_planning/blob/main/Shelf_merchandise.py')
     st.image(imp,width=800)
     
     file1 = st.file_uploader('Upload a file',key='f1')
