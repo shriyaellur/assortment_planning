@@ -8,3 +8,4 @@ pulp
 more_itertools
 mlxtend
 joblib
+openpyxl
