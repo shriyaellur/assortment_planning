@@ -36,7 +36,7 @@ rad = st.sidebar.radio('Navigation',['Shelf Space Optimization','Market Basket']
 if rad=='Shelf Space Optimization':
     st.header('SHELF SPACE OPTIMIZATION')
 
-    st.image('Shelf_optimization.jpg',use_column_width=True)
+    st.image('https://github.com/shriyaellur/assortment_planning/blob/main/Shelf_optimization.jpg',use_column_width=True)
     
     file1 = st.file_uploader('Upload a file',key='f1')
 
