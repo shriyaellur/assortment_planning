@@ -9,6 +9,7 @@ import numpy as np
 import pulp
 import sklearn
 import pandas as pd
+import mlxtend
 from sklearn.linear_model import LinearRegression
 from scipy import optimize
 import warnings
