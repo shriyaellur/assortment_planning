@@ -7,3 +7,4 @@ pyforest
 pulp
 more_itertools
 mlxtend
+joblib
