@@ -6,3 +6,4 @@ flask-cors
 pyforest
 pulp
 more_itertools
+mlxtend
