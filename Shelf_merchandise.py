@@ -19,6 +19,7 @@ np.seterr(divide='ignore', invalid='ignore')
 import time
 from time import sleep
 from time import time
+import more_itertools
 import math
 import webbrowser
 from math import isnan
@@ -33,6 +34,7 @@ from mlxtend.frequent_patterns import association_rules
 import time
 from time import sleep
 from PIL import Image
+
 
 rad = st.sidebar.radio('Navigation',['Shelf Space Optimization','Market Basket'])
 
