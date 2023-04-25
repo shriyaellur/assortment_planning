@@ -48,7 +48,7 @@ if rad=='Shelf Space Optimization':
     file1 = st.file_uploader('Upload a file',key='f1')
 
     if file1 is not None:
-        sales=pd.read_excel(file1,header=None)
+        sales=pd.read_excel(file1,header=None,engine="openpyxl")
         
         lift=sales.iloc[2:,1:]
         lift=np.array(lift)
