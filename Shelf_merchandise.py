@@ -6,6 +6,7 @@ Created on Tue Apr 25 12:03:19 2023
 """
 
 import numpy as np
+import sklearn
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from scipy import optimize
