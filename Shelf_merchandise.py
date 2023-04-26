@@ -185,7 +185,7 @@ if rad=='Shelf Space Optimization':
             
 if rad=='Market Basket':
     st.title('Market Basket Analysis')
-    st.image('market.jpg',width=800,height=200)
+    st.image('market.jpg',use_column_width='auto')
     f=st.file_uploader('Upload file')
 
     if f is not None:
