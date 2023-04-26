@@ -215,10 +215,17 @@ if rad=='Market Basket':
         
         s=my_rules.sort_values("confidence",ascending=False).reset_index(drop=True)
         
-        st.subheader('Possible Combinations')
-      
-        st.write(list(s['antecedents'][0])[0],'--------->',list(s['consequents'][0])[0])
-        st.write(list(s['antecedents'][1])[0],'--------->',list(s['consequents'][1])[0])
-        st.write(list(s['antecedents'][2])[0],'--------->',list(s['consequents'][2])[0])
-        st.write(list(s['antecedents'][3])[0],'--------->',list(s['consequents'][3])[0])
-       
+        if(st.button('Submit')):
+
+            progress = st.progress(0)
+            for i in range(100):
+                sleep(0.05)
+                progress.progress(i+1)
+        
+            st.subheader('Possible Combinations')
+
+            st.write(list(s['antecedents'][0])[0],'--------->',list(s['consequents'][0])[0])
+            st.write(list(s['antecedents'][1])[0],'--------->',list(s['consequents'][1])[0])
+            st.write(list(s['antecedents'][2])[0],'--------->',list(s['consequents'][2])[0])
+            st.write(list(s['antecedents'][3])[0],'--------->',list(s['consequents'][3])[0])
+
