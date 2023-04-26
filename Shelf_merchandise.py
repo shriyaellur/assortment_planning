@@ -168,7 +168,8 @@ if rad=='Shelf Space Optimization':
             w = list(sales.iloc[0,1:])
             dfs = pd.DataFrame(data = matrix,columns=w,index=['Shelf1','Shelf2','Shelf3','Shelf4','Shelf5'])
             st.subheader('Planned Shelf')
-            st.dataframe(data=dfs)
+            dfs1 = dfs.astype(str)
+            st.table(data=dfs1)
             
             val_Matrix=[[0 for X in range(len(lift[0])) ] for y in range(len(lift))]
             for x in range(len(lift)):
@@ -178,7 +179,8 @@ if rad=='Shelf Space Optimization':
                         
             dfv = pd.DataFrame(data = val_Matrix,columns=w,index=['Shelf1','Shelf2','Shelf3','Shelf4','Shelf5'])
             st.subheader('Estimated Sales as per plan')
-            st.dataframe(data=dfv)
+            dfv1 = dfv.astype(str)
+            st.table(data=dfv1)
             st.write('Maximum Sales obtained:',value(prob.objective))
             
 if rad=='Market Basket':
