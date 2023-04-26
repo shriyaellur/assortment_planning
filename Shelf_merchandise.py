@@ -49,6 +49,7 @@ if rad=='Shelf Space Optimization':
 
     if file1 is not None:
         sales=pd.read_excel(file1,header=None,engine="openpyxl")
+        sales.astype(str).to_parquet("/data/TargetData_Raw_{}.parquet".format(LABL))
         
         lift=sales.iloc[2:,1:]
         lift=np.array(lift)
