@@ -51,7 +51,7 @@ if rad=='Shelf Space Optimization':
         sales=pd.read_excel(file1,header=None,engine="openpyxl")
         
         
-        lift=sales.iloc[2:,1:]
+        lift=sales.iloc[1:,1:]
         lift=np.array(lift)
         lift = lift.astype(np.int)
 
