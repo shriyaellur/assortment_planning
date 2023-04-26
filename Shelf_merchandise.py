@@ -53,7 +53,7 @@ if rad=='Shelf Space Optimization':
         
         lift=sales.iloc[1:,1:]
         lift=np.array(lift)
-        #lift = lift.astype(np.int)
+        lift = lift.astype(np.int)
 
         brands=sales.iloc[0:1,:]
         brands=np.array(brands)
@@ -155,7 +155,7 @@ if rad=='Shelf Space Optimization':
                 progress.progress(i+1)
             st.success('Shelf Optimization Completed')
             st.subheader('Data Provided')
-            st.table(sales)
+            st.write(sales)
             Matrix=[[0 for X in range(len(lift[0]))] for y in range(len(lift))]
 
             for v in prob.variables():
