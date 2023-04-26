@@ -49,7 +49,7 @@ if rad=='Shelf Space Optimization':
 
     if file1 is not None:
         sales=pd.read_excel(file1,header=None,engine="openpyxl")
-        sales.astype('int32').dtypes
+        
         
         lift=sales.iloc[2:,1:]
         lift=np.array(lift)
@@ -155,7 +155,7 @@ if rad=='Shelf Space Optimization':
                 progress.progress(i+1)
             st.success('Shelf Optimization Completed')
             st.subheader('Data Provided')
-            st.dataframe(sales)
+            #st.dataframe(sales)
             Matrix=[[0 for X in range(len(lift[0]))] for y in range(len(lift))]
 
             for v in prob.variables():
