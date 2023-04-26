@@ -154,7 +154,7 @@ if rad=='Shelf Space Optimization':
                 progress.progress(i+1)
             st.success('Shelf Optimization Completed')
             st.subheader('Data Provided')
-            #st.table(sales)
+            st.table(sales)
             Matrix=[[0 for X in range(len(lift[0]))] for y in range(len(lift))]
 
             for v in prob.variables():
