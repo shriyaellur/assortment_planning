@@ -215,7 +215,8 @@ if rad=='Market Basket':
         
         s=my_rules.sort_values("confidence",ascending=False).reset_index(drop=True)
         
-        
+        st.subheader('Possible Combinations')
+      
         st.write(list(s['antecedents'][0])[0],'--------->',list(s['consequents'][0])[0])
         st.write(list(s['antecedents'][1])[0],'--------->',list(s['consequents'][1])[0])
         st.write(list(s['antecedents'][2])[0],'--------->',list(s['consequents'][2])[0])
