@@ -53,7 +53,7 @@ if rad=='Shelf Space Optimization':
         
         lift=sales.iloc[1:,1:]
         lift=np.array(lift)
-        lift = lift.astype(np.int64)
+        lift = lift.astype(np.int)
 
         brands=sales.iloc[0:1,:]
         brands=np.array(brands)
